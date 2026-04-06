@@ -150,7 +150,7 @@ PROXY_URL = ""  # 例如 "http://127.0.0.1:7890"
 ### 启动
 
 ```bash
-python main.py
+python core.py
 ```
 
 配置界面会自动弹出，快捷键监听在后台同时启动。
