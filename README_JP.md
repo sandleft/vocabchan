@@ -150,7 +150,7 @@ PROXY_URL = ""  # 例："http://127.0.0.1:7890"
 ### 起動
 
 ```bash
-python main.py
+python core.py
 ```
 
 設定UIが開き、ホットキーの監視がバックグラウンドで自動起動します。
