@@ -689,11 +689,7 @@ def batch_import_from_clipboard():
         show_toast("批量导入", "剪贴板无有效行")
         return
     show_toast("批量导入", f"开始处理 {len(lines)} 条词条...")
-    provider_slot = SLOTS_CONFIG.get("clipboard", [{}])
-    if not provider_slot:
-        show_toast("批量导入失败", "clipboard 槽位未配置，请在设置中添加")
-        return
-    provider_slot = provider_slot[0]  # 使用 clipboard 槽位的首个 provider
+    provider_slot = SLOTS_CONFIG["clipboard"][0]  # 使用 clipboard 槽位的首个 provider
     # 【修复 III.2】将循环及 sleep 移入 daemon 线程，防止热键回调线程被阻塞 N×0.3 秒
     def _do_batch():
         for line in lines:

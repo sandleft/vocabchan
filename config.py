@@ -19,6 +19,8 @@ ASSETS_PATH  = os.path.join(_BASE_DIR, "Assets")
 VOCAB_FOLDER = os.path.join(_BASE_DIR, "Vocabulary")
 DB_PATH      = os.path.join(_BASE_DIR, "VocabChan.db")
 LOG_PATH     = os.path.join(_BASE_DIR, "VocabChan.log")
+VN_OUTPUT_DIR = os.path.join(_BASE_DIR, "VN_Output")  # Galgame 剧本输出目录
+VN_OUTPUT_DIR = os.path.join(_BASE_DIR, "VN_Output")  # Galgame 剧本输出目录
 # 【修复 4】使用统一 PROXY_URL 变量：原代码先将 http_proxy 赋为""，再读取它赋给 https_proxy，
 #           导致 https_proxy 永远为空，破坏系统代理配置
 PROXY_URL = ""  # e.g. "http://127.0.0.1:7890"
