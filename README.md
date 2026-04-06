@@ -150,7 +150,7 @@ Everything else has sensible defaults. Hotkey assignments, model names, Anki car
 ### Run
 
 ```bash
-python main.py
+python core.py
 ```
 
 A config UI will open and the hotkey daemon starts in the background automatically.
