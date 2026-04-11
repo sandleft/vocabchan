@@ -117,7 +117,7 @@ Google Gemini · OpenAI · Claude · DeepSeek · Grok · Qwen · Kimi · Doubao 
 ### インストール
 
 ```bash
-git clone https://github.com/yourusername/vocabchan
+git clone https://github.com/sandleft/vocabchan
 cd vocabchan
 pip install -r requirements.txt
 ```
