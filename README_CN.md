@@ -195,3 +195,9 @@ python core.py
 ## 开源协议
 
 MIT
+
+---
+
+## 鸣谢
+
+感谢 [LINUX DO](https://linux.do) 社区的支持与推广。
