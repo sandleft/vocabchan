@@ -117,7 +117,7 @@ Google Gemini · OpenAI · Claude · DeepSeek · Grok · 通义千问 · Kimi ·
 ### 安装
 
 ```bash
-git clone https://github.com/你的用户名/vocabchan
+git clone https://github.com/sandleft/vocabchan
 cd vocabchan
 pip install -r requirements.txt
 ```
