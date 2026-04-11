@@ -117,7 +117,7 @@ Each hotkey slot in `config.py` is just a provider name and model string — cha
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/vocabchan
+git clone https://github.com/sandleft/vocabchan
 cd vocabchan
 pip install -r requirements.txt
 ```
