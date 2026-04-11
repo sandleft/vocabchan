@@ -195,3 +195,9 @@ A config UI will open and the hotkey daemon starts in the background automatical
 ## License
 
 MIT
+
+---
+
+## Acknowledgements
+
+Thanks to the [LINUX DO](https://linux.do) community for their support and promotion.
