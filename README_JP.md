@@ -195,3 +195,9 @@ python core.py
 ## ライセンス
 
 MIT
+
+---
+
+## 謝辞
+
+[LINUX DO](https://linux.do) コミュニティのご支援とご推薦に感謝いたします。
