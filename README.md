@@ -181,12 +181,3 @@ a cloud-first social learning platform
 It is meant to be a desktop-native, local-first language input and learning workflow hub.
 ---
 
-## License
-
-MIT
-
----
-
-## Acknowledgements
-
-Thanks to the [LINUX DO](https://linux.do) community for their support and promotion.
