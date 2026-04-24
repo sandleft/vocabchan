@@ -92,6 +92,23 @@ The broader release target includes the following product scope, tracked in the 
 
 Some roadmap items in the specification are still planned rather than complete. The README reflects the intended product boundary, not only the smallest currently exposed code path.
 
+## Screenshots
+
+### Main Window
+![Main Window](docs/images/dashboard.png)
+
+### Capture
+![Capture Page](docs/images/capture-page.png)
+
+### Analysis
+![Analysis Page](docs/images/analysis-page.png)
+
+### Library
+![Library Page](docs/images/library-page.png)
+
+### Integrations
+![Integrations Page](docs/images/integrations-anki.png)
+
 ## Example Workflows
 
 ### 1. Instant capture while reading or watching
