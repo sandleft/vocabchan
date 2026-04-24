@@ -1,0 +1,10 @@
+{
+  "active_profile_id": "default",
+  "profiles": [
+    {
+      "id": "default",
+      "name": "默认配置",
+      "config_file": "default.json"
+    }
+  ]
+}

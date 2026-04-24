@@ -1,0 +1,749 @@
+[
+  {
+    "ran_at": "2026-04-18 23:09:41",
+    "duration_seconds": 0.002,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "ok",
+        "summary": "127.0.0.1:4455",
+        "suggestion": "基础字段完整。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "ok",
+        "summary": "AnkiConnect 地址：http://127.0.0.1:8765",
+        "suggestion": "若需真实连通性检查，请在集成批次执行连接测试。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 28.10 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 8,
+      "warn": 3,
+      "error": 0
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-18 23:22:36",
+    "duration_seconds": 0.002,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "ok",
+        "summary": "127.0.0.1:4455",
+        "suggestion": "基础字段完整。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "ok",
+        "summary": "AnkiConnect 地址：http://127.0.0.1:8765",
+        "suggestion": "若需真实连通性检查，请在集成批次执行连接测试。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 18.49 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 8,
+      "warn": 3,
+      "error": 0
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-18 23:24:43",
+    "duration_seconds": 0.002,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "ok",
+        "summary": "127.0.0.1:4455",
+        "suggestion": "基础字段完整。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "ok",
+        "summary": "AnkiConnect 地址：http://127.0.0.1:8765",
+        "suggestion": "若需真实连通性检查，请在集成批次执行连接测试。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 18.46 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 8,
+      "warn": 3,
+      "error": 0
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-19 03:22:50",
+    "duration_seconds": 4.116,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 30.27 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-20 10:07:59",
+    "duration_seconds": 4.126,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 44.24 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-20 10:10:12",
+    "duration_seconds": 4.147,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 34.72 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-20 10:21:18",
+    "duration_seconds": 4.14,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 42.73 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-20 17:37:12",
+    "duration_seconds": 4.163,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 34.19 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  },
+  {
+    "ran_at": "2026-04-22 08:23:34",
+    "duration_seconds": 4.133,
+    "profile_id": "default",
+    "items": [
+      {
+        "label": "AI Provider",
+        "status": "warn",
+        "summary": "openai 未配置 API Key",
+        "suggestion": "请在 Analysis > Providers 中补充默认 Provider 的鉴权信息。"
+      },
+      {
+        "label": "本地模型",
+        "status": "error",
+        "summary": "PaddleOCR 缺失；本地 Whisper 缺失",
+        "suggestion": "安装 paddleocr 依赖或切换到其他 OCR 引擎。；安装 whisper 或 faster-whisper，或切换到 API 模式。"
+      },
+      {
+        "label": "数据库文件",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\vocabchan.db",
+        "suggestion": "文件已存在。"
+      },
+      {
+        "label": "Assets 目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\assets",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "日志目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\logs",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "备份目录",
+        "status": "warn",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\backups",
+        "suggestion": "目录尚不存在，可通过自动修复创建。"
+      },
+      {
+        "label": "导出目录",
+        "status": "ok",
+        "summary": "C:\\Users\\13534\\Documents\\python\\vocabulary\\exports",
+        "suggestion": "目录可写。"
+      },
+      {
+        "label": "OBS 配置",
+        "status": "error",
+        "summary": "OBS 未连通：OBS 未运行，或 WebSocket 未在 127.0.0.1:4455 监听。请先启动 OBS，并确认“工具 -> WebSocket 服务器设置”已启用；如果你要用回溯功能，还需要在 OBS 中开启回放缓存（Replay Buffer）。",
+        "suggestion": "请确认 OBS 正在运行，且已启用 WebSocket 服务与正确的密码配置。"
+      },
+      {
+        "label": "Anki 配置",
+        "status": "error",
+        "summary": "AnkiConnect 未响应：<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+        "suggestion": "请确认桌面版 Anki 已启动，并在插件中启用 AnkiConnect。"
+      },
+      {
+        "label": "磁盘空间",
+        "status": "ok",
+        "summary": "可用 34.48 GB",
+        "suggestion": "足够进行当前批次的配置和日志写入。"
+      },
+      {
+        "label": "FFmpeg",
+        "status": "warn",
+        "summary": "未配置 FFmpeg 路径",
+        "suggestion": "视频转码相关流程将回退到原始格式。"
+      },
+      {
+        "label": "数据库完整性",
+        "status": "ok",
+        "summary": "PRAGMA integrity_check = ok",
+        "suggestion": "数据库结构可用。"
+      }
+    ],
+    "summary": {
+      "ok": 6,
+      "warn": 3,
+      "error": 3
+    },
+    "override_keys": []
+  }
+]

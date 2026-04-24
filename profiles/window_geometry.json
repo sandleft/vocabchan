@@ -1,0 +1,9 @@
+{
+  "default": {
+    "x": 2,
+    "y": 2,
+    "width": 1280,
+    "height": 800,
+    "maximized": false
+  }
+}
