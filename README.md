@@ -1,195 +1,184 @@
-# VocabChan 📸
+# VocabChan
 
-[English](./README.md) · [中文](./README_CN.md) · [日本語](./README_JP.md)
+VocabChan is a local-first desktop hub for immersive language learning.
 
-> Press a hotkey. AI breaks it down. Saved to your notes automatically. That's it.
+It is built for learners who collect language from real media, not just textbook examples: games, anime, YouTube, manga, screenshots, copied text, subtitles, and audio. The goal is not only to translate a sentence, but to turn real input into searchable, reusable study material.
 
-> ⚠️ **Windows EXE is currently in beta — bugs expected. Running from Python source is recommended for now.**
+VocabChan connects the full workflow:
 
----
+**capture -> preprocess -> analyze -> store -> export/sync -> review later**
 
-## What is this?
+## Status
 
-VocabChan is a hotkey-driven language learning tool for people who learn by watching — anime, dramas, YouTube, games, you name it.
+VocabChan is currently moving from a validated prototype to a release-ready desktop application.
 
-You hit a key, it grabs whatever's on your screen (or mic, or clipboard), sends it to an AI with a language-specific analysis prompt, and gets back a full linguistic breakdown tailored to whatever language you're learning. The result saves to Obsidian and optionally Anki automatically. No copy-pasting, no tab-switching, just keep watching.
+The public repository is intended to show both:
 
----
+- the working foundation that already exists
+- the product direction and feature scope being built toward
 
-## What it can do
+This means some parts of the project are already usable, while some roadmap items are documented ahead of full implementation.
 
-**Capture anything**
-- Screenshot the screen and ask AI to explain what's on it
-- Record mic or system audio, auto-transcribe and analyze
-- Pull the last N seconds of OBS footage and send it for analysis
-- Paste any text from clipboard and break it down instantly
-- Paste a whole word list and process everything at once (batch import)
-- Select a specific region of the screen instead of full capture
-- Optional preview window — confirm the screenshot before it gets sent
+## Who It Is For
 
-**AI analysis**
-- Sends to any AI provider you configure, with a language-specific prompt (see Language Templates below)
-- Returns: translation, word breakdown, grammar deep-dive, usage context, pronunciation notes
-- Injects your recent vocabulary into every prompt so the AI can spot connections (RAG memory)
-- Duplicate detection — if you keep running into the same word, it tells you how many times
-- Auto-retries failed requests — queued and retried automatically if the API is flaky
-- Optional local OCR (PaddleOCR) to pre-extract text before sending, reduces hallucinations
-- Optional local transcription (Faster-Whisper) for audio, works fully offline
-- Optional always-on background listener that auto-triggers without pressing anything *(heavy on CPU, use with caution)*
+VocabChan is designed for:
 
-**Save everything**
-- Every entry saves to Obsidian as a structured note: word, original sentence, full analysis, screenshot, audio, video — all in one place
-- Obsidian with the [Spaced Repetition plugin](https://github.com/st3v3nmw/obsidian-spaced-repetition) gives you full review capability without leaving your vault
-- Vocabulary links automatically become Obsidian knowledge graph nodes — your notes build a web of connected words over time
-- Optionally syncs to Anki as a flashcard with image and audio
-- **Anki does not support video** — video captures are stored in Obsidian only
-- Anki card front content is configurable: show just the word, just the sentence, or both
-- Anki audio placement is configurable: play before or after flipping the card
-- Optionally backs up all media to Teldrive
+- immersive Japanese learners
+- self-learners working across multiple languages
+- learners who already use tools like Anki and Obsidian
+- users who want a desktop-native, low-friction, local-first workflow
 
-**Review and stats**
-- Built-in spaced repetition reminders at 3, 7, and 14 days
-- Search all saved vocabulary
-- Learning stats: total words, today, this week, by language, most-seen words
-- Export full vocabulary to CSV or TXT
+## What Makes It Different
 
-**Bonus**
-- Auto-generates a short Galgame-style review script from today's vocabulary at 23:50 every night (can be disabled)
-- Privacy masking — strips emails, phone numbers, ID numbers from text before sending to AI
-- Proxy support
-- Change most settings at runtime without recompiling the EXE
+Most tools handle only one part of the workflow: OCR, translation, flashcards, or notes.
 
----
+VocabChan is designed as a single desktop workspace that can unify:
 
-## Language-specific AI templates
+- capture from clipboard, screenshots, audio, OBS replay, and imported files
+- OCR / ASR / text cleanup before analysis
+- AI analysis plus dictionary-style support information
+- local SQLite storage for long-term accumulation
+- export and sync to learning tools such as Anki and Obsidian
 
-This is one of VocabChan's core features. Every language has a tailored analysis prompt that tells the AI exactly what to focus on — not just "translate this," but the specific grammar traps and nuances that actually trip up learners of that language.
+## Core Product Direction
 
-**All target languages are freely configurable.** The ones below are built-in presets:
+VocabChan is being productized around six capability areas:
 
-| Language | What the AI focuses on |
-|----------|----------------------|
-| 🇯🇵 Japanese | Honorific system (尊敬語/謙譲語/丁寧語) — who uses what to whom; kanji on-yomi vs kun-yomi; contexts where the subject is dropped |
-| 🇺🇸 English | Pronunciation vs spelling disconnect; phrasal verbs — collocations and how meaning shifts by context |
-| 🇪🇸 Spanish | Verb conjugation forms; subjunctive mood — when it triggers and what emotion it carries; noun gender |
-| 🇫🇷 French | Noun gender patterns; liaison and elision — when sounds link or disappear; pronunciation vs spelling |
-| 🇩🇪 German | Four-case declension (nominative/accusative/dative/genitive) with three genders; verb-final bracket structures in subordinate clauses |
-| 🇰🇷 Korean | Speech level system (존댓말) — endings and who they apply to; liaison, final consonant assimilation, and other sound change rules |
-| 🇮🇹 Italian | Noun-adjective gender/number agreement; verb conjugation system; cultural context words and gesture-linked expressions |
-| 🇨🇳 Chinese | Pinyin with tone markings; character composition logic; measure word collocations |
-| 🇵🇹 Portuguese | Nasal sound characteristics; European vs Brazilian Portuguese — grammar and vocabulary differences flagged explicitly |
-| 🇸🇦 Arabic | MSA vs dialect (Egyptian, Levantine, etc.) distinction; root-based morphology; letter shape variants by position |
-| ✏️ Custom 1/2/3 | Write your own focus instructions for any language |
+1. **Capture**  
+   Clipboard, screenshots, region capture, audio capture, OBS replay, subtitle/image/audio import.
 
-Switch between templates instantly with a hotkey while watching. The AI immediately adjusts its analysis style.
+2. **Preprocess**  
+   OCR, ASR, text cleanup, deduplication, media splitting.
 
----
+3. **Analysis**  
+   AI providers, prompt templates, dictionary support, furigana, TTS, frequency labeling, caching, cost tracking.
 
-## Supported AI providers
+4. **Memory & Review**  
+   Searchable history, session views, review helpers, workshop-style generated learning content.
 
-VocabChan comes pre-configured for these providers, but **every single one is optional and interchangeable** — fill in keys for whichever you have, leave the rest empty. Or route everything through OpenRouter if you prefer one key for everything:
+5. **Storage & Integrations**  
+   SQLite, local assets, Markdown export, AnkiConnect, Obsidian, CSV workflows.
 
-Google Gemini · OpenAI · Claude · DeepSeek · Grok · Qwen · Kimi · Doubao · MiniMax · OpenRouter
+6. **UX & Workflow**  
+   Tray behavior, silent mode, profiles, diagnostics, retry queue, floating result windows.
 
-Each hotkey slot in `config.py` is just a provider name and model string — change either freely.
+## Current Foundation
 
----
+The project already includes a substantial desktop foundation and productization work in progress, including:
 
-## How to set it up
+- PySide6 desktop shell with task-oriented navigation
+- hotkey-driven capture workflows
+- clipboard text and image ingestion
+- screenshot and region capture flows
+- audio capture and OBS-related workflows
+- local SQLite persistence
+- history, logs, retry queue, and import/export surfaces
+- provider configuration, prompt configuration, glossary and analysis settings
+- Anki / Obsidian / CSV integration surfaces
+- packaging and release-regression scripts
+- unit and integration test coverage for the evolving desktop architecture
 
-### What you need
+## Planned Release Scope
 
-**Required**
-- Python 3.10+
-- At least one API key from any provider above
+The broader release target includes the following product scope, tracked in the specification and being implemented in stages:
 
-**For note-saving — pick one or both**
-- [Obsidian](https://obsidian.md/) — images, audio, video, and text all in one note. Add the [Spaced Repetition plugin](https://github.com/st3v3nmw/obsidian-spaced-repetition) for built-in review
-- [Anki](https://apps.ankiweb.net/) + [AnkiConnect plugin](https://ankiweb.net/shared/info/2055492159) — great flashcard system, but **Anki does not support video**
+- multi-source capture from clipboard, screenshots, audio, OBS replay, subtitles, images, and audio files
+- AI analysis with configurable providers and prompt templates
+- dictionary lookup, furigana, TTS, glossary support, and frequency signals
+- analysis cache and API cost tracking
+- searchable library, editing, logs, retry queue, and session-oriented memory
+- Anki and Obsidian export/sync workflows
+- multi-profile configuration, tray control, silent mode, diagnostics, and floating result windows
 
-**For video features**
-- OBS Studio with WebSocket enabled
+Some roadmap items in the specification are still planned rather than complete. The README reflects the intended product boundary, not only the smallest currently exposed code path.
 
-**Optional**
-- [Faster-Whisper](https://github.com/guillaumekuhn/faster-whisper) — local audio transcription, no API needed
-- PaddleOCR — local OCR for better accuracy
+## Example Workflows
 
-### Installation
+### 1. Instant capture while reading or watching
 
-```bash
-git clone https://github.com/sandleft/vocabchan
-cd vocabchan
-pip install -r requirements.txt
-```
+1. Trigger a hotkey or capture from the clipboard.
+2. Send text, image, audio, or replay media through preprocessing.
+3. Run AI analysis and supporting enrichment.
+4. Save the result locally.
+5. Export or sync to Anki / Obsidian if needed.
+6. Revisit it later in the library.
 
-### Configuration
+### 2. Batch import from study material
 
-Open `config.py` and fill in what you need:
+1. Import subtitles, images, audio, or other source files.
+2. Preview, split, and analyze in batches.
+3. Save results into the local database.
+4. Export selected outputs into downstream tools.
 
-```python
-# Add keys for whichever providers you want — leave the rest empty
-API_KEYS = {
-    "google": "your-key-here",
-    "openai": "your-key-here",
-    "claude": "",        # leave empty if not using
-    "deepseek": "",
-    # ...
-}
+### 3. Long-term accumulation
 
-# OBS settings — only needed for video replay features
-OBS_WS_HOST     = "127.0.0.1"
-OBS_WS_PASSWORD = "your-obs-password"
-OBS_WATCH_DIR   = r"C:/your/obs/recording/path"
+1. Keep collecting real-world language input.
+2. Build a searchable personal vocabulary and sentence history.
+3. Review, organize, and generate follow-up study material.
 
-# Optional proxy
-PROXY_URL = ""  # e.g. "http://127.0.0.1:7890"
-```
+## Screenshots
 
-Everything else has sensible defaults. Hotkey assignments, model names, Anki card style, feature toggles — all configurable, but you don't need to touch any of it to get started.
+Add screenshots under `docs/images/` and embed them here.
 
-### Run
+Recommended screenshot set:
 
-```bash
-python core.py
-```
+- main dashboard
+- capture page with hotkeys / import entry points
+- analysis settings page
+- library/history page
+- integrations page
+- floating micro window
+- one batch import preview dialog
 
-A config UI will open and the hotkey daemon starts in the background automatically.
+## Tech Stack
 
----
+- **Language:** Python 3.11+
+- **Desktop UI:** PySide6
+- **Storage:** SQLite + local asset files
+- **Packaging:** PyInstaller
+- **Architecture direction:** local-first desktop app with modular services, event bus, async host, task engine, and Qt-based UI shell
 
-## Hotkeys
+## Project Layout
 
-**All hotkeys are fully customizable in `config.py`.** The ones below are just the defaults.
+```text
+src/vocabchan/
+  app/
+  gui/
+  infrastructure/
+  storage_adapter/
+  task_engine/
+  unified_interface/
+  shared/
 
-| Key | Action |
-|-----|--------|
-| F4 | Screenshot + audio, fast analysis |
-| F6 | Screenshot + audio, deep analysis |
-| F2 | Clipboard text analysis |
-| F7 | Hold to record (OBS live recording) |
-| F12 | OBS replay buffer (last N seconds) |
-| F8 / F9 | Screenshot only |
-| F10 / F11 | Audio only |
-| Alt+1–7 | Same actions via OpenRouter models |
-| Alt+Z / X / C | Switch language template |
-| Alt+S | Search saved vocabulary |
-| Alt+Q | Show learning stats |
-| Alt+E | Export to CSV |
-| Alt+W | Export to TXT |
-| Alt+B | Batch import from clipboard |
-| Alt+R | Select capture region |
+scripts/
+tests/
+resources/
+docs/
+Development Setup
+pip install -e ".[dev]"
+Run
+python main.py
+or
 
----
+python -m vocabchan
+Test
+pytest tests/unit/
+pytest tests/integration/
+pytest tests/e2e/
+Packaging
+python scripts/package_release.py --dry-run
+python scripts/release_regression.py --dry-run
+Platform Focus
+Current productization work is focused on Windows desktop first.
 
-## Notes
+Non-Goals
+VocabChan is intentionally not trying to be:
 
-- API keys stay in your local `config.py` only — never sent anywhere else
-- Anki must be running with AnkiConnect active for card sync to work
-- OBS requires WebSocket service enabled in OBS settings
-- First-time Whisper or OCR setup downloads models — takes a few minutes
-- Media files are saved locally and never auto-deleted
-- Most settings can be changed at runtime via the config UI without touching `config.py`
-
+a browser DOM translation overlay
+a galgame hook platform
+a replacement for Anki
+a cloud-first social learning platform
+It is meant to be a desktop-native, local-first language input and learning workflow hub.
 ---
 
 ## License
