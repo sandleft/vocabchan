@@ -95,19 +95,20 @@ Some roadmap items in the specification are still planned rather than complete. 
 ## Screenshots
 
 ### Main Window
-![Main Window](dashboard.png)
+![Main Window](docs/images/dashboard.png)
 
 ### Capture
-![Capture Page](capture-page.png)
+![Capture Page](docs/images/capture-page.png)
 
 ### Analysis
-![Analysis Page](analysis-page.png)
+![Analysis Page](docs/images/analysis-page.png)
 
 ### Library
-![Library Page](library-page.png)
+![Library Page](docs/images/library-page.png)
 
 ### Integrations
-![Integrations Page](integrations-anki.png)
+![Integrations Page](docs/images/integrations-page.png)
+
 
 ## Example Workflows
 
